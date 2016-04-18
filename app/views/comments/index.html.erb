@@ -2,10 +2,9 @@
   <div class="page-header">
     <h1>All Comments</h1>
   </div>
-  
     <% @comments.each do |comments| %>
   <div class="comment">
-    <strong><%= comments.name %></strong>
+    <strong>NAME</strong>
     <p><%= comments.comment %></p>
   <div class=meta>
     <%= link_to time_ago_in_words(comments.created_at) + " ago", comments %> |
