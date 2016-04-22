@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+
   resources :gets
   resources :tours
+
 
   devise_for :users
   get 'welcome/index'

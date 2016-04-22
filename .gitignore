@@ -4,10 +4,14 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 <<<<<<< HEAD
+<<<<<<< HEAD
 .DS_Store
 =======
 
 >>>>>>> ec11b2a00cad60a9c2db5f0f788b8dec8612957f
+=======
+
+>>>>>>> parent of cde8b48... "sorted login abd userID"
 # Ignore bundler config.
 /.bundle
 
