@@ -1,3 +1,4 @@
 class Comment < ActiveRecord::Base
-    #attr_acessible :content
+      attr_accessor :content, :user_id
+     belongs_to :user
 end
