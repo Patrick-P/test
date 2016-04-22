@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Gets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Trip</th>
+      <th>Name</th>
+      <th>Of</th>
+      <th>Trip</th>
+      <th>Type</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gets.each do |get| %>
+      <tr>
+        <td><%= get.trip %></td>
+        <td><%= get.name %></td>
+        <td><%= get.of %></td>
+        <td><%= get.trip %></td>
+        <td><%= get.type %></td>
+        <td><%= get.date %></td>
+        <td><%= link_to 'Show', get %></td>
+        <td><%= link_to 'Edit', edit_get_path(get) %></td>
+        <td><%= link_to 'Destroy', get, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Get', new_get_path %>

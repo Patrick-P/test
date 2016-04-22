@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   resources :tours
 
   devise_for :users
@@ -10,6 +11,9 @@ Rails.application.routes.draw do
   
   root to: "comments#index"
 
+=======
+  resources :gets
+>>>>>>> ec11b2a00cad60a9c2db5f0f788b8dec8612957f
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
