@@ -22,6 +22,16 @@ ActiveRecord::Schema.define(version: 20160421222005) do
 
   add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
+  create_table "gets", force: :cascade do |t|
+    t.string   "trip"
+    t.string   "name"
+    t.string   "of"
+    t.string   "type"
+    t.string   "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "tours", force: :cascade do |t|
     t.string   "type"
     t.date     "date"

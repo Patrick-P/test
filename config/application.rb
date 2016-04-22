@@ -5,12 +5,8 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-
-<<<<<<< HEAD
+#module Workspace
 module DublinTours
-=======
-module Workspace
->>>>>>> ec11b2a00cad60a9c2db5f0f788b8dec8612957f
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -26,9 +22,7 @@ module Workspace
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
-<<<<<<< HEAD
     config.assets.initialize_on_precompile = false
-=======
->>>>>>> ec11b2a00cad60a9c2db5f0f788b8dec8612957f
+    end
   end
-end
+#end
